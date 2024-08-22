@@ -68,7 +68,7 @@ def train_loop(model, dataloader, device, epochs, optimizer, criterion):
         total_loss_train = 0.0
 
         for train_data, train_label in tqdm(dataloader):
-            print(train_data, train_label)
+            # print(train_data, train_label)
 
             train_label = torch.tensor(train_label).to(device)
             train_data['input_ids'] = train_data['input_ids'].to(device)
