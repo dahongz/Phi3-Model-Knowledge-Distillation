@@ -186,3 +186,5 @@ fabric.properties
 dipopenai/.env
 data/llama_train_test.csv
 data/llama_samples_test.txt
+
+README.md

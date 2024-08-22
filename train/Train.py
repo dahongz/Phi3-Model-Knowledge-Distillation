@@ -38,7 +38,8 @@ def train_and_save(lm, train_path):
     learning_rate = float(cfg['learning_rate'])
 
     use_cuda = torch.cuda.is_available()
-    print(torch.cuda.get_device_name(0))
+    if torch.cuda.is_available():
+        print(torch.cuda.get_device_name(0))
     device = torch.device("cuda" if use_cuda else "cpu")
 
     model_name = models[lm]
